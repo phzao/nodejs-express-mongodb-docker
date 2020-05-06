@@ -10,7 +10,7 @@ const app = express();
 const mongoose = require('mongoose');
 
 mongoose.connect(config.connectionString);
-
+console.log('connection', config.connectionString);
 const Product = require('./models/product');
 const Customer = require('./models/customer');
 const Order = require('./models/order');
